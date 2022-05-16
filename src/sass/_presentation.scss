@@ -1,0 +1,194 @@
+.presentation {
+	.presentation__section-one {
+		@media only screen and (max-width: 1225px) {
+			display: flex;
+			flex-direction: column-reverse;
+			max-width: 1225px;
+		}
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		.presentation__section-one--text {
+			@media only screen and (max-width: 1225px) {
+				height: 44rem;
+				padding: 8rem 3rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			padding: 17rem;
+			height: 60rem;
+			display: flex;
+			flex-direction: column;
+			align-items: baseline;
+			gap: 3.2rem;
+			.presentation__title {
+				@media only screen and (max-width: 1225px) {
+					font-size: 3.2rem;
+					text-align: center;
+				}
+				font-family: "Fraunces";
+				font-weight: 900;
+				font-size: 5rem;
+				letter-spacing: -0.285714px;
+			}
+			.presentation__text {
+				@media only screen and (max-width: 1225px) {
+					font-size: 1.8rem;
+					text-align: center;
+				}
+				font-family: "Barlow";
+				font-size: 1.6rem;
+				font-weight: 600;
+				line-height: 3rem;
+				color: #808397;
+			}
+			.presentation__link--yellow {
+				@media only screen and (max-width: 1225px) {
+					font-size: 1.8rem;
+					// text-align: center;
+				}
+				color: black;
+				font-family: "Fraunces";
+				font-weight: 900;
+				font-size: 1.5rem;
+				line-height: 2.5rem;
+				text-transform: uppercase;
+				letter-spacing: 0.2rem;
+				position: relative;
+				transition: ease-in-out 0.3s;
+				span {
+					position: relative;
+				}
+				&::before {
+					position: absolute;
+					width: 110%;
+					height: 1rem;
+					background-color: $yellow;
+					border: 1px transparent;
+					border-radius: 28px;
+					bottom: 0px;
+					left: 0px;
+					content: "";
+					opacity: 0.25;
+					transform: translateX(-5.5%);
+				}
+				&:hover::before {
+					opacity: 1;
+				}
+			}
+		}
+		.presentation__section-one--image {
+			@media only screen and (max-width: 1225px) {
+				height: 31rem;
+			}
+			height: 60rem;
+			background: url(../../images/photos/image-transform.jpg) center/cover;
+		}
+	}
+	.presentation__section-two {
+		@media only screen and (max-width: 1225px) {
+			display: flex;
+			flex-direction: column;
+			max-width: 1225px;
+		}
+		@extend .presentation__section-one;
+		.presentation__section-two--text {
+			@extend .presentation__section-one--text;
+			.presentation__link--red {
+				@extend .presentation__link--yellow;
+				span {
+					position: relative;
+				}
+				&::before {
+					position: absolute;
+					width: 110%;
+					height: 1rem;
+					background-color: $softred;
+					border: 1px transparent;
+					border-radius: 28px;
+					bottom: 0px;
+					left: 0px;
+					content: "";
+					opacity: 0.25;
+					transform: translateX(-5.5%);
+				}
+				&:hover::before {
+					opacity: 1;
+				}
+			}
+		}
+		.presentation__section-two--image {
+			@media only screen and (max-width: 1225px) {
+				height: 31rem;
+			}
+			height: 60rem;
+			background: url(../../images/photos/image-stand-out.jpg) center/cover;
+		}
+	}
+	.presentation__section-three {
+		@media only screen and (max-width: 1225px) {
+			display: flex;
+			flex-direction: column;
+			max-width: 1225px;
+		}
+		@extend .presentation__section-one;
+		.presentation__section-three--cherry {
+			height: 60rem;
+			background: url(../../images/photos/image-graphic-design.jpg) center/cover;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			gap: 3rem;
+			.presentation__section-three--cherry--title {
+				@media only screen and (max-width: 1225px) {
+					font-size: 2.8rem;
+				}
+				font-family: "Fraunces";
+				font-size: 4rem;
+				color: $Very-dark-desaturated-blue;
+			}
+			.presentation__section-three--cherry--text {
+				@media only screen and (max-width: 1225px) {
+					font-size: 1.6rem;
+				}
+				font-family: "Barlow";
+				font-size: 1.5rem;
+				padding-bottom: 5rem;
+				text-align: center;
+				width: 35rem;
+				line-height: 2.5rem;
+				color: $Very-dark-desaturated-blue;
+			}
+		}
+		.presentation__section-three--orange {
+			height: 60rem;
+			background: url(../../images/photos/image-photography.jpg) center/cover;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			gap: 3rem;
+			.presentation__section-three--orange--title {
+				@media only screen and (max-width: 1225px) {
+					font-size: 2.8rem;
+				}
+				font-family: "Fraunces";
+				font-size: 4rem;
+				color: $Very-dark-desaturated-blue;
+			}
+			.presentation__section-three--orange--text {
+				@media only screen and (max-width: 1225px) {
+					font-size: 1.6rem;
+				}
+				font-family: "Barlow";
+				font-size: 1.5rem;
+				padding-bottom: 5rem;
+				text-align: center;
+				width: 35rem;
+				line-height: 2.5rem;
+				color: $Very-dark-desaturated-blue;
+			}
+		}
+	}
+}

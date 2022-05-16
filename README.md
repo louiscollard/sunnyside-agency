@@ -1,2 +1,2 @@
 # sunnyside-agency
-Excersice for @BeCodeLiege
+First group project for @BeCode
